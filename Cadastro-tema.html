@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tema - Área de Administração</title>
+    <style>
+        /* Estilos iguais aos fornecidos no exemplo anterior */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Área de Administração</h1>
+    </header>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="cadastro-tema.html">Cadastro de Tema</a>
+        <a href="cadastro-usuario.html">Cadastro de Usuário</a>
+        <a href="index.html">Página Inicial</a>
+    </nav>
+    <div class="container">
+        <h2>Cadastro de Tema</h2>
+        <form action="processar-tema.html" method="post">
+            <div class="form-group">
+                <label for="nome-tema">Nome do Tema</label>
+                <input type="text" id="nome-tema" name="nome-tema" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+        <h2>Listagem de Temas</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Exemplo Tema</td>
+                    <td>
+                        <a href="editar-tema.html">Editar</a>
+                        <a href="apagar-tema.html">Apagar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Autor: Seu Nome - <a href="sobre.html" style="color: #fff;">Sobre o Autor</a></p>
+    </footer>
+</body>
+</html>
